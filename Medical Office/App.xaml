@@ -1,0 +1,47 @@
+﻿<Application x:Class="Medical_Office.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Medical_Office"
+              >
+    <!--StartupUri="MainWindow.xaml"-->
+    <Application.Resources>
+        <Style x:Key="TabItemProperty" TargetType="TabItem">
+            <Setter Property="Background" Value="#61a5c2"/>
+            <Setter Property="FontFamily" Value="IRANSansWeb UltraLight"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="BorderBrush" Value="#006d77"/>
+            <Setter Property="Width" Value="255"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style x:Key="blocktextbold" TargetType="TextBlock" >
+            <Setter Property="FontFamily" Value="IRANSansWeb UltraLight"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="#f2f2f2"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+          
+        </Style>
+        <Style x:Key="blocktextaccount" TargetType="TextBlock" >
+            <Setter Property="FontFamily" Value="IRANSansWeb UltraLight"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <!--<Setter Property="VerticalAlignment" Value="Stretch"/>-->
+            <Setter Property="Foreground" Value="#f2f2f2"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+
+        </Style>
+
+        <Style x:Key="blocktextgridtab" TargetType="TextBlock" >
+            <Setter Property="FontFamily" Value="IRANSansWeb UltraLight"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+
+    </Application.Resources>
+</Application>

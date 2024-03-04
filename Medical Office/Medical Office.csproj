@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{088AE64B-5A75-49D9-AC7C-CB9453EF017E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Medical_Office</RootNamespace>
+    <AssemblyName>Medical Office</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>588hospital_100778.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BehComponents">
+      <HintPath>..\..\C#\Medical Office\Medical Office\bin\Debug\BehComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="DateTimeSelector">
+      <HintPath>C:\Users\ShahrRayane.IR\Downloads\DateTimeSelector 1.1.2\DateTimeSelector 1.1.2\DateTimeSelector.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Charts, Version=14.1.0.35, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.35, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ExcelLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelLibrary.1.2011.7.31\lib\ExcelLibrary.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FarsiLibrary.Resources, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\C#\Medical Office\Medical Office\bin\Debug\FarsiLibrary.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Utils, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\C#\Medical Office\Medical Office\bin\Debug\FarsiLibrary.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Win">
+      <HintPath>..\..\C#\CRMfinalProject\CRMfinalProject\bin\Debug\FarsiLibrary.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FoxLearn.License">
+      <HintPath>..\..\Installations\Installations\LicenseKey_Raw_Project\LicenseKey\LicenseKey\bin\Debug\FoxLearn.License.dll</HintPath>
+    </Reference>
+    <Reference Include="LibExcel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\LibExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client, Version=4.14.0.0, Culture=neutral, PublicKeyToken=0a613f4dd989e8ae, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Identity.Client.4.14.0\lib\net45\Microsoft.Identity.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.5.6.0\lib\net461\Microsoft.IdentityModel.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.SqlParser, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Management.SqlParser.160.20216.14\lib\net462\Microsoft.SqlServer.Management.SqlParser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Smo.dll.1.0.1\lib\Microsoft.SqlServer.Smo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.1343.22, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.1343.22, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.1343.22, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Common, Version=4.5.0.4, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\NuGet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Configuration, Version=4.5.0.4, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\NuGet.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Frameworks, Version=4.5.0.4, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\NuGet.Frameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Packaging, Version=4.5.0.4, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\NuGet.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Packaging.Core, Version=4.5.0.4, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\NuGet.Packaging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Protocol, Version=4.5.0.4, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\NuGet.Protocol.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Resolver, Version=4.5.0.4, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\NuGet.Resolver.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Versioning, Version=4.5.0.4, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\NuGet.Versioning.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PersianDateTime, Version=1.1.5082.36395, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PersianDateTime.1.1.5082.36395\lib\net40\PersianDateTime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2023.1.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2023.1.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\Designers\.NET\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Win, Version=2023.1.1.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Designer 2023.1.1\Designers\.NET\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TxtProNetV3, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\TxtProNetV3.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="XanderUI">
+      <HintPath>..\..\Components\XanderUI\XanderUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BackRes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackRes.Designer.cs">
+      <DependentUpon>BackRes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChandePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChandePassword.Designer.cs">
+      <DependentUpon>ChandePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotification.Designer.cs">
+      <DependentUpon>frmNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GhooboozForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GhooboozForm.Designer.cs">
+      <DependentUpon>GhooboozForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListForms.Designer.cs">
+      <DependentUpon>ListForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn2.Designer.cs">
+      <DependentUpon>LogIn2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medical_Bio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medical_Bio.Designer.cs">
+      <DependentUpon>Medical_Bio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageForm.Designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="msgBox.cs" />
+    <Compile Include="NobatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NobatForm.Designer.cs">
+      <DependentUpon>NobatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegisterAdmin.Designer.cs">
+      <DependentUpon>RegisterAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportDate.Designer.cs">
+      <DependentUpon>ReportDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RigAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RigAdmin.Designer.cs">
+      <DependentUpon>RigAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SavabeghForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SavabeghForm.Designer.cs">
+      <DependentUpon>SavabeghForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchParvande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchParvande.Designer.cs">
+      <DependentUpon>SearchParvande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServerConnection.cs" />
+    <Compile Include="ServiecesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiecesForm.Designer.cs">
+      <DependentUpon>ServiecesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetTime.Designer.cs">
+      <DependentUpon>SetTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShomareParvandeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShomareParvandeForm.Designer.cs">
+      <DependentUpon>ShomareParvandeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\Windows\DialogResult.cs" />
+    <Compile Include="TariffeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TariffeForm.Designer.cs">
+      <DependentUpon>TariffeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCLogin.Designer.cs">
+      <DependentUpon>UCLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="AccessRoleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccessRoleForm.Designer.cs">
+      <DependentUpon>AccessRoleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DoctorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorForm.Designer.cs">
+      <DependentUpon>DoctorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileForm.Designer.cs">
+      <DependentUpon>FileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsuranceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsuranceForm.Designer.cs">
+      <DependentUpon>InsuranceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PatiantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatiantForm.Designer.cs">
+      <DependentUpon>PatiantForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductForm.Designer.cs">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="AccessRoleForm.resx">
+      <DependentUpon>AccessRoleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackRes.resx">
+      <DependentUpon>BackRes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChandePassword.resx">
+      <DependentUpon>ChandePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorForm.resx">
+      <DependentUpon>DoctorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileForm.resx">
+      <DependentUpon>FileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotification.resx">
+      <DependentUpon>frmNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GhooboozForm.resx">
+      <DependentUpon>GhooboozForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsuranceForm.resx">
+      <DependentUpon>InsuranceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListForms.resx">
+      <DependentUpon>ListForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn2.resx">
+      <DependentUpon>LogIn2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medical_Bio.resx">
+      <DependentUpon>Medical_Bio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageForm.resx">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NobatForm.resx">
+      <DependentUpon>NobatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatiantForm.resx">
+      <DependentUpon>PatiantForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductForm.resx">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterAdmin.resx">
+      <DependentUpon>RegisterAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDate.resx">
+      <DependentUpon>ReportDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RigAdmin.resx">
+      <DependentUpon>RigAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SavabeghForm.resx">
+      <DependentUpon>SavabeghForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchParvande.resx">
+      <DependentUpon>SearchParvande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiecesForm.resx">
+      <DependentUpon>ServiecesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetTime.resx">
+      <DependentUpon>SetTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShomareParvandeForm.resx">
+      <DependentUpon>ShomareParvandeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TariffeForm.resx">
+      <DependentUpon>TariffeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCLogin.resx">
+      <DependentUpon>UCLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Resources\IRANSansWeb Bold.eot" />
+    <Resource Include="Resources\IRANSansWeb Bold.ttf" />
+    <None Include="Resources\IRANSansWeb Bold.woff" />
+    <None Include="Resources\IRANSansWeb Light.eot" />
+    <Resource Include="Resources\IRANSansWeb Light.ttf" />
+    <None Include="Resources\IRANSansWeb Light.woff" />
+    <None Include="Resources\IRANSansWeb Persian Bold.eot" />
+    <Resource Include="Resources\IRANSansWeb Persian Bold.ttf" />
+    <None Include="Resources\IRANSansWeb Persian Bold.woff" />
+    <None Include="Resources\IRANSansWeb Persian Light.eot" />
+    <Resource Include="Resources\IRANSansWeb Persian Light.ttf" />
+    <None Include="Resources\IRANSansWeb Persian Light.woff" />
+    <None Include="Resources\IRANSansWeb Persian Medium.eot" />
+    <Resource Include="Resources\IRANSansWeb Persian Medium.ttf" />
+    <None Include="Resources\IRANSansWeb Persian Medium.woff" />
+    <None Include="Resources\IRANSansWeb Persian UltraLight.eot" />
+    <Resource Include="Resources\IRANSansWeb Persian UltraLight.ttf" />
+    <None Include="Resources\IRANSansWeb Persian UltraLight.woff" />
+    <None Include="Resources\IRANSansWeb Persian.eot" />
+    <Resource Include="Resources\IRANSansWeb Persian.ttf" />
+    <None Include="Resources\IRANSansWeb Persian.woff" />
+    <None Include="Resources\IRANSansWeb UltraLight.eot" />
+    <Resource Include="Resources\IRANSansWeb UltraLight.ttf" />
+    <None Include="Resources\IRANSansWeb UltraLight.woff" />
+    <None Include="Resources\IRANSansWeb.eot" />
+    <Resource Include="Resources\IRANSansWeb.ttf" />
+    <None Include="Resources\IRANSansWeb.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\account_black.png" />
+    <Resource Include="Image\account_white.png" />
+    <Resource Include="Image\add-file_black.png" />
+    <Resource Include="Image\add-file_whit.png" />
+    <Resource Include="Image\add-user.png" />
+    <Resource Include="Image\addu.png" />
+    <Resource Include="Image\add_black.png" />
+    <Resource Include="Image\add_white1.png" />
+    <Resource Include="Image\back.png" />
+    <Resource Include="Image\backup.png" />
+    <Resource Include="Image\change-password.png" />
+    <Resource Include="Image\data-backup.png" />
+    <Resource Include="Image\database-restore.png" />
+    <Resource Include="Image\delete %282%29.png" />
+    <Resource Include="Image\doctor.png" />
+    <Resource Include="Image\edit.png" />
+    <Resource Include="Image\Exit_black.png" />
+    <Resource Include="Image\Exit_White.png" />
+    <Resource Include="Image\file_color.png" />
+    <Resource Include="Image\goback.png" />
+    <Resource Include="Image\heckmark.png" />
+    <Resource Include="Image\icons8-add-file-80.png" />
+    <Resource Include="Image\icons8-go-back-96.png" />
+    <Resource Include="Image\insur.png" />
+    <Resource Include="Image\logout-100.png" />
+    <Resource Include="Image\logout-10000.png" />
+    <Resource Include="Image\Logout_Black.png" />
+    <Resource Include="Image\Logout_White.png" />
+    <Resource Include="Image\member-skin-type.png" />
+    <Resource Include="Image\next.png" />
+    <Resource Include="Image\people.gif" />
+    <Resource Include="Image\person-color.png" />
+    <Resource Include="Image\power-off-red.png" />
+    <Resource Include="Image\power-off.png" />
+    <Resource Include="Image\prof1.png" />
+    <Resource Include="Image\profile_color.png" />
+    <Resource Include="Image\Reception_black.png" />
+    <Resource Include="Image\Reception_Whit.png" />
+    <Resource Include="Image\restore.png" />
+    <Resource Include="Image\return.png" />
+    <Resource Include="Image\service.png" />
+    <Resource Include="Image\sms-64.png" />
+    <Resource Include="Image\sms.png" />
+    <Resource Include="Image\smsm.png" />
+    <Resource Include="Image\tareff.png" />
+    <Resource Include="Image\Tick.png" />
+    <Resource Include="Image\user-group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE\BE.csproj">
+      <Project>{ccdc3bc1-d5ab-4f8e-b14c-b4a35c31c92b}</Project>
+      <Name>BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{bf346095-8cf9-48fa-8c8f-233bf1d2e0d2}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{c9e66ddd-b48e-4023-9f6a-a89210b76699}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-go-back-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_white1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="588hospital_100778.ico" />
+    <Content Include="Content\PersianDatePicker.css" />
+    <Content Include="Content\PersianDatePicker.min.css" />
+    <None Include="Image\icons8-user-96.png" />
+    <None Include="Image\icons8-add-64.png" />
+    <None Include="Image\icons8-pencil-64.png" />
+    <None Include="Image\icons8-join-64.png" />
+    <None Include="Image\Danger.png" />
+    <None Include="Image\danger2.png" />
+    <None Include="Image\informaion.png" />
+    <None Include="Image\active.png" />
+    <None Include="Image\deactive.png" />
+    <None Include="Image\keepass.png" />
+    <None Include="Image\medicine.png" />
+    <None Include="Image\Search.png" />
+    <None Include="Image\cancel.png" />
+    <None Include="Image\printer.png" />
+    <None Include="Image\improvement.png" />
+    <None Include="Image\mprovement.png" />
+    <None Include="Image\icons8-gender-neutral-user-skin-type-3-100.png" />
+    <None Include="Image\icons8-customer-64.png" />
+    <None Include="Image\icons8-customer-80.png" />
+    <None Include="Image\icons8-lock-80 %281%29.png" />
+    <None Include="Image\icons8-lock-landscape-80.png" />
+    <None Include="Image\icons8-padlock-80.png" />
+    <None Include="Image\icons8-certificate-80.png" />
+    <None Include="Image\icons8-cancel-80.png" />
+    <None Include="Image\icons8-cancel-80 %281%29.png" />
+    <None Include="Image\icons8-cancel-80 %282%29.png" />
+    <None Include="Image\icons8-cancel-256.png" />
+    <None Include="Image\icons8-cancel-256 %281%29.png" />
+    <None Include="Image\icons8-cancel-256 %282%29.png" />
+    <None Include="Image\icons8-microsoft-excel-256.png" />
+    <Resource Include="Image\cash.png" />
+    <Resource Include="Image\chart.png" />
+    <Resource Include="Image\list.png" />
+    <Resource Include="Image\Patiant.png" />
+    <Resource Include="Image\queue.png" />
+    <Resource Include="Image\queue2.png" />
+    <Resource Include="Image\reception.png" />
+    <Resource Include="Image\search-file.png" />
+    <Resource Include="Image\check.png" />
+    <Resource Include="Image\calendar.png" />
+    <Resource Include="doctor.ico" />
+    <Resource Include="Image\user-account3.png" />
+    <Resource Include="Image\account1.png" />
+    <Content Include="Scripts\PersianDatePicker.js" />
+    <Content Include="Scripts\PersianDatePicker.min.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Data.SqlClient.SNI.2.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Data.SqlClient.SNI.2.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.2.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.2.0.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

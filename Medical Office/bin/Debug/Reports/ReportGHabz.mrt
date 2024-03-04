@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="1">
+      <ghabz Ref="2" type="Stimulsoft.Report.Dictionary.StiBusinessObject" isKey="true">
+        <Alias>ghabz</Alias>
+        <BusinessObjects isList="true" count="0" />
+        <Category />
+        <Columns isList="true" count="4">
+          <value>OtherCost,System.Double</value>
+          <value>PortionInsuarance,System.Double</value>
+          <value>PortionOrganizatin,System.Double</value>
+          <value>NameOfService,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Guid>470f8074f7e04ed3a46d66d13fd0798e</Guid>
+        <Key>5cabe878c531415babde977baba6f8aa</Key>
+        <Name>ghabz</Name>
+      </ghabz>
+    </BusinessObjects>
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="0" />
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="5">
+      <value>,service,service,,System.String,,False,False,False,False,,_x0032_1fd5c6169b64934ad2b90fb84a1f830</value>
+      <value>,Date,Date,,System.String,,False,False,False,False,,ec90de3fd7994e73a0eb4f91411ee6cf</value>
+      <value>,FileNumber,FileNumber,,System.String,,False,False,False,False,,_x0030_dae8cb1fefa4d6f83fd3efc3fcd0e45</value>
+      <value>,Doctor,Doctor,,System.String,,False,False,False,False,,_x0033_5a6415589224431a846c0fba3fbbb81</value>
+      <value>,Price,Price,,System.Double,,False,False,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>8204916e8b85465db43758cb1ee4b0a9</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="6">
+        <Panel1 Ref="4" type="Panel" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,1.4,19.6,1.2</ClientRectangle>
+          <Components isList="true" count="4">
+            <Text1 Ref="5" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.4,0,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>تاریخ</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text5 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.2,0,3.8,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Doctor}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text9 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.6,0,1.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>نام دکتر</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text10 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13,0,3,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Date}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>Panel1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </Panel1>
+        <Panel2 Ref="9" type="Panel" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2.6,19.6,11.2</ClientRectangle>
+          <Components isList="true" count="5">
+            <Text12 Ref="10" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10,8.2,4,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Text>هزینه قابل پرداخت</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text8 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.8,8.2,4.6,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text2 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4.8,8.4,4.6,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Text>{Price}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="13" type="CurrencyFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <DecimalSeparator>/</DecimalSeparator>
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>6</NegativePattern>
+                <PositivePattern>1</PositivePattern>
+                <State>DecimalDigits, GroupSeparator, GroupSize</State>
+                <Symbol>ريال</Symbol>
+              </TextFormat>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Tableghabz Ref="14" type="Stimulsoft.Report.Components.Table.StiTable" isKey="true">
+              <Brush>Transparent</Brush>
+              <BusinessObjectGuid>470f8074f7e04ed3a46d66d13fd0798e</BusinessObjectGuid>
+              <ClientRectangle>0,0.4,19.6,4</ClientRectangle>
+              <ColumnCount>4</ColumnCount>
+              <Components isList="true" count="12">
+                <Tableghabz_Cell1 Ref="15" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>0,0,4.8,1.33</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>IRANSansWeb,8</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <ID>0</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tableghabz_Cell1</Name>
+                  <Page isRef="3" />
+                  <Parent isRef="14" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>سایر هزینه ها</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Tableghabz_Cell1>
+                <Tableghabz_Cell2 Ref="16" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>4.8,0,4.8,1.33</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>IRANSansWeb,8</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <ID>1</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tableghabz_Cell2</Name>
+                  <Page isRef="3" />
+                  <Parent isRef="14" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>سهم بیمار</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Tableghabz_Cell2>
+                <Tableghabz_Cell3 Ref="17" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>9.6,0,4.8,1.33</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>IRANSansWeb,8</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <ID>2</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tableghabz_Cell3</Name>
+                  <Page isRef="3" />
+                  <Parent isRef="14" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>سهم بیمه</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Tableghabz_Cell3>
+                <Tableghabz_Cell4 Ref="18" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>14.4,0,5.2,1.33</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>IRANSansWeb,8</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <ID>3</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tableghabz_Cell4</Name>
+                  <Page isRef="3" />
+                  <Parent isRef="14" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>نام خدمات</Text>
+                  <TextBrush>Black</TextBrush>
+                  <Type>Expression</Type>
+                  <VertAlignment>Center</VertAlignment>
+                </Tableghabz_Cell4>
+                <Tableghabz_Cell5 Ref="19" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>0,1.33,4.8,1.33</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>IRANSansWeb,8</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <ID>4</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tableghabz_Cell5</Name>
+                  <Page isRef="3" />
+                  <Parent isRef="14" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>{ghabz.PortionOrganizatin}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="20" type="CurrencyFormat" isKey="true">
+                    <DecimalDigits>0</DecimalDigits>
+                    <DecimalSeparator>,</DecimalSeparator>
+                    <GroupSeparator>,</GroupSeparator>
+                    <NegativePattern>6</NegativePattern>
+                    <PositivePattern>2</PositivePattern>
+                    <Symbol>ريال</Symbol>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <VertAlignment>Center</VertAlignment>
+                </Tableghabz_Cell5>
+                <Tableghabz_Cell6 Ref="21" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>4.8,1.33,4.8,1.33</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>IRANSansWeb,8</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <ID>5</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tableghabz_Cell6</Name>
+                  <Page isRef="3" />
+                  <Parent isRef="14" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>{ghabz.OtherCost}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="22" type="CurrencyFormat" isKey="true">
+                    <DecimalDigits>0</DecimalDigits>
+                    <DecimalSeparator>,</DecimalSeparator>
+                    <GroupSeparator>,</GroupSeparator>
+                    <NegativePattern>6</NegativePattern>
+                    <PositivePattern>2</PositivePattern>
+                    <Symbol>ريال</Symbol>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <VertAlignment>Center</VertAlignment>
+                </Tableghabz_Cell6>
+                <Tableghabz_Cell7 Ref="23" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>9.6,1.33,4.8,1.33</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>IRANSansWeb,8</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <ID>6</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tableghabz_Cell7</Name>
+                  <Page isRef="3" />
+                  <Parent isRef="14" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>{ghabz.PortionInsuarance}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <TextFormat Ref="24" type="CurrencyFormat" isKey="true">
+                    <DecimalDigits>0</DecimalDigits>
+                    <DecimalSeparator>,</DecimalSeparator>
+                    <GroupSeparator>,</GroupSeparator>
+                    <NegativePattern>6</NegativePattern>
+                    <PositivePattern>2</PositivePattern>
+                    <Symbol>ريال</Symbol>
+                    <UseLocalSetting>False</UseLocalSetting>
+                  </TextFormat>
+                  <VertAlignment>Center</VertAlignment>
+                </Tableghabz_Cell7>
+                <Tableghabz_Cell8 Ref="25" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>14.4,1.33,5.2,1.33</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>IRANSansWeb,8</Font>
+                  <HorAlignment>Center</HorAlignment>
+                  <ID>7</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tableghabz_Cell8</Name>
+                  <Page isRef="3" />
+                  <Parent isRef="14" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <Text>{ghabz.NameOfService}</Text>
+                  <TextBrush>Black</TextBrush>
+                  <VertAlignment>Center</VertAlignment>
+                </Tableghabz_Cell8>
+                <Tableghabz_Cell9 Ref="26" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>0,2.67,4.8,1.33</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>8</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tableghabz_Cell9</Name>
+                  <Page isRef="3" />
+                  <Parent isRef="14" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <TextBrush>Black</TextBrush>
+                </Tableghabz_Cell9>
+                <Tableghabz_Cell10 Ref="27" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>4.8,2.67,4.8,1.33</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>9</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tableghabz_Cell10</Name>
+                  <Page isRef="3" />
+                  <Parent isRef="14" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <TextBrush>Black</TextBrush>
+                </Tableghabz_Cell10>
+                <Tableghabz_Cell11 Ref="28" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>9.6,2.67,4.8,1.33</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>10</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tableghabz_Cell11</Name>
+                  <Page isRef="3" />
+                  <Parent isRef="14" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <TextBrush>Black</TextBrush>
+                </Tableghabz_Cell11>
+                <Tableghabz_Cell12 Ref="29" type="TableCell" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>14.4,2.67,5.2,1.33</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Expressions isList="true" count="0" />
+                  <Font>Arial,9</Font>
+                  <ID>11</ID>
+                  <JoinCells isList="true" count="0" />
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Tableghabz_Cell12</Name>
+                  <Page isRef="3" />
+                  <Parent isRef="14" />
+                  <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                  <TextBrush>Black</TextBrush>
+                </Tableghabz_Cell12>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <DataSourceName isNull="true" />
+              <Expressions isList="true" count="0" />
+              <Filters isList="true" count="0" />
+              <FooterRowsCount>1</FooterRowsCount>
+              <HeaderRowsCount>1</HeaderRowsCount>
+              <MinHeight>0.60000000000000009</MinHeight>
+              <Name>Tableghabz</Name>
+              <NumberID>12</NumberID>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <RowCount>3</RowCount>
+              <Sort isList="true" count="0" />
+            </Tableghabz>
+            <Data2 Ref="30" type="DataBand" isKey="true">
+              <Brush>Transparent</Brush>
+              <BusinessObjectGuid>470f8074f7e04ed3a46d66d13fd0798e</BusinessObjectGuid>
+              <ClientRectangle>0,5.2,19.6,0.8</ClientRectangle>
+              <Components isList="true" count="0" />
+              <Conditions isList="true" count="0" />
+              <DataSourceName isNull="true" />
+              <Expressions isList="true" count="0" />
+              <Filters isList="true" count="0" />
+              <Name>Data2</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Sort isList="true" count="0" />
+            </Data2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>Panel2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </Panel2>
+        <Data Ref="31" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid>470f8074f7e04ed3a46d66d13fd0798e</BusinessObjectGuid>
+          <ClientRectangle>0,0.4,18,0.8</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataSourceName isNull="true" />
+          <Expressions isList="true" count="0" />
+          <Filters isList="true" count="0" />
+          <Name>Data</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </Data>
+        <HorizontalLinePrimitive1 Ref="32" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>-1.4,2.4,21,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Conditions isList="true" count="0" />
+          <EndCap Ref="33" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Expressions isList="true" count="0" />
+          <Name>HorizontalLinePrimitive1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <StartCap Ref="34" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive1>
+        <HorizontalLinePrimitive2 Ref="35" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>-1,4.2,20,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Conditions isList="true" count="0" />
+          <EndCap Ref="36" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Expressions isList="true" count="0" />
+          <Name>HorizontalLinePrimitive2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <StartCap Ref="37" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive2>
+        <HorizontalLinePrimitive3 Ref="38" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>-1,10.8,20,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Conditions isList="true" count="0" />
+          <EndCap Ref="39" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Expressions isList="true" count="0" />
+          <Name>HorizontalLinePrimitive3</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <StartCap Ref="40" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive3>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>2a85a01591234db99c43ed71d03fb128</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>13.9</PageHeight>
+      <PageWidth>20</PageWidth>
+      <PaperSize>Letter</PaperSize>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>2/27/2023 7:05:55 PM</ReportChanged>
+  <ReportCreated>2/14/2023 11:53:12 AM</ReportCreated>
+  <ReportFile>G:\peractis of modhej\Medical Office\Reports\ReportGHabz.mrt</ReportFile>
+  <ReportGuid>e323affe739f4105a2b7dff9a801eb9e</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2023.1.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="1">
+    <سبک1 Ref="41" type="Stimulsoft.Report.StiTableStyle" isKey="true">
+      <AlternatingDataColor>238, 238, 238</AlternatingDataColor>
+      <AlternatingDataForeground>34, 34, 34</AlternatingDataForeground>
+      <BackColor>White</BackColor>
+      <Conditions isList="true" count="0" />
+      <DataColor>White</DataColor>
+      <DataForeground>Black</DataForeground>
+      <FooterColor>180, 208, 68, 86</FooterColor>
+      <FooterForeground>180, 90, 176, 238</FooterForeground>
+      <GridColor>180, 38, 68, 120</GridColor>
+      <HeaderColor>180, 46, 198, 200</HeaderColor>
+      <HeaderForeground>White</HeaderForeground>
+      <HotHeaderColor>Transparent</HotHeaderColor>
+      <Name>سبک1</Name>
+      <SelectedDataColor>52, 152, 219</SelectedDataColor>
+      <SelectedDataForeground>White</SelectedDataForeground>
+    </سبک1>
+  </Styles>
+</StiSerializer>

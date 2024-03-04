@@ -1,0 +1,526 @@
+﻿<Window x:Class="Medical_Office.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Medical_Office"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+       WindowStartupLocation="CenterScreen"
+         Background="Transparent"
+        AllowsTransparency="True"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        Title="فرم اصلی" Height="700" Width="1300" Icon="588hospital_100778.ico" >
+    <Border Background="#2c7da0" BorderThickness="5" BorderBrush="#2c7da0" CornerRadius="10">
+        <Grid Margin="5,-5,-5,5">
+            <Grid.Background>
+                <ImageBrush/>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border Background="#61a5c2" BorderThickness="5" BorderBrush="#61a5c2" CornerRadius="10" Grid.RowSpan="3" Grid.ColumnSpan="12" Margin="11,14,6.5,44" Grid.Row="1" Width="1270">
+                <TabControl x:Name="tabControl" Background="#FFA1C8D8" FontFamily="/Medical Office;component/Resources/#IRANSansWeb UltraLight" Margin="-5,0" Width="1260">
+
+                    <TabItem Header="سایر" Style="{StaticResource TabItemProperty}" FontFamily="IRANSansWeb UltraLight" Height="35" Margin="0" Width="252"  >
+                        <Grid x:Name="Gridother" Background="#FFA1C8D8" HorizontalAlignment="Right" Width="1260" Margin="-1,0,-5,-4">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="14*"/>
+                                <RowDefinition Height="69*"/>
+                                <RowDefinition Height="39*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="212*"/>
+                                <ColumnDefinition Width="212*"/>
+                                <ColumnDefinition Width="212*"/>
+                                <ColumnDefinition Width="213*"/>
+                                <ColumnDefinition Width="64*"/>
+                                <ColumnDefinition Width="148*"/>
+
+                            </Grid.ColumnDefinitions>
+                            <!--<Border Background="#2c7da0" BorderThickness="5" BorderBrush="#2c7da0" CornerRadius="10">-->
+                            <WrapPanel  Cursor="Hand" Grid.Row="0"  Margin="13,-16,66,-17" VerticalAlignment="Center" HorizontalAlignment="Center" Width="139" Grid.Column="6" Height="98" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_8" Grid.RowSpan="3"   >
+                                <TextBlock  Text="بیمه"   Margin="30,30,0,0" Style="{StaticResource blocktextgridtab}" />
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                                <Image Source="/image/insur.png" Height="40" Width="53" Margin="15,30,0,0" />
+                            </WrapPanel>
+
+                            <WrapPanel  Cursor="Hand" Grid.Row="0"  Margin="32,-20,26,-13" VerticalAlignment="Center" HorizontalAlignment="Center" Width="194" Grid.Column="2" Height="98" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_9" Grid.RowSpan="3"  >
+
+                                <TextBlock  Text="تعرفه"   Margin="60,30,0,0" Style="{StaticResource blocktextgridtab}" />
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                                <Image Source="/image/tareff.png" Height="50" Width="56" Margin="15,30,0,0" />
+                            </WrapPanel>
+                            <WrapPanel  Cursor="Hand" Grid.Row="0"  Margin="30,-16,29,-13" VerticalAlignment="Center" HorizontalAlignment="Center" Width="194" Grid.Column="3" Height="94"  MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_10" Grid.RowSpan="3" >
+
+
+                                <TextBlock  Text="خدمات"   Margin="30,35,0,0" Style="{StaticResource blocktextgridtab}"  Width="42"/>
+
+                                <Image Source="/image/service.png" Height="47" Width="56" Margin="10,30,0,0" />
+                            </WrapPanel>
+                            <WrapPanel  Cursor="Hand" Grid.Row="0"  Margin="11,12,10,12" VerticalAlignment="Center" HorizontalAlignment="Center" Width="192" Grid.Column="1" Height="98"  MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_12" Grid.RowSpan="3" >
+
+
+                                <TextBlock  Text="قبوض"   Margin="30,35,0,0" Style="{StaticResource blocktextgridtab}"  Width="42"/>
+
+                                <Image Source="/image/cash.png" Height="47" Width="56" Margin="10,30,0,0" />
+                            </WrapPanel>
+                            <Separator Grid.ColumnSpan="2" Grid.Column="3" Height="32" Margin="153,28,0,-1" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.RowSpan="2">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <Separator Grid.ColumnSpan="2" Grid.Column="5" Height="32" Margin="88,26,149,0" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.RowSpan="2">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <Separator Grid.ColumnSpan="2" Grid.Column="2" Height="32" Margin="211,9,226,0" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.RowSpan="2">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <Separator Grid.ColumnSpan="2" Grid.Column="1" Height="32" Margin="212,8,224,0" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.RowSpan="2">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <Separator Grid.ColumnSpan="2" Height="32" Margin="232,10,209,0" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Grid.RowSpan="2">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="گزارشات"  Style="{StaticResource TabItemProperty}" FontFamily="IRANSansWeb UltraLight" Height="35" Margin="-1,0,1,0" Width="252" >
+                        <Grid x:Name="GridReport" Background="#FFA1C8D8" Margin="-1,-2,-5,-5"  Width="1260">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="3*"/>
+                                <RowDefinition Height="14*"/>
+                                <RowDefinition Height="37*"/>
+                                <RowDefinition Height="7*"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="212*"/>
+                                <ColumnDefinition Width="212*"/>
+                                <ColumnDefinition Width="212*"/>
+                                <ColumnDefinition Width="213*"/>
+                                <ColumnDefinition Width="64*"/>
+                                <ColumnDefinition Width="148*"/>
+                                <!--<ColumnDefinition Width="213*"/>-->
+                            </Grid.ColumnDefinitions>
+                            <!--<Border Background="#2c7da0" BorderThickness="5" BorderBrush="#2c7da0" CornerRadius="10">-->
+                            <WrapPanel  Cursor="Hand" Grid.Row="1"  Margin="31,6,12,12" VerticalAlignment="Center" HorizontalAlignment="Center" Width="216" Grid.Column="4" Height="98" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_17" Grid.ColumnSpan="2" Grid.RowSpan="3"   >
+                                <TextBlock  Text="گزارشات"   Margin="30,30,0,0" Style="{StaticResource blocktextgridtab}" />
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                                <Image Source="/image/list.png" Height="40" Width="53" Margin="15,30,0,0" />
+                            </WrapPanel>
+                            <WrapPanel  Cursor="Hand" Grid.Row="1"  Margin="61,6,69,12" VerticalAlignment="Center" HorizontalAlignment="Center" Width="208" Grid.Column="3" Height="98" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_24" Grid.ColumnSpan="2" Grid.RowSpan="3"   >
+                                <TextBlock  Text="نمودار"   Margin="30,30,0,0" Style="{StaticResource blocktextgridtab}" />
+                                <Image Source="/image/chart.png" Height="40" Width="53" Margin="30,30,0,0" />
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                            </WrapPanel>
+                            <Separator Grid.ColumnSpan="2" Grid.Column="3" Height="32" Margin="227,0,24,0" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.Row="2">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <Separator Grid.ColumnSpan="2" Grid.Column="2" Height="32" Margin="204,19,97,0" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" Grid.Row="1">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="برنامه ها" Style="{StaticResource TabItemProperty}" FontFamily="IRANSansWeb UltraLight" Height="35" Margin="-2,0,2,0" Width="252">
+                        <Grid x:Name="pro" Background="#FFA1C8D8" Margin="-1,-1,-5,-4"  Width="1260">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="9*"/>
+                                <RowDefinition Height="18*"/>
+                                <RowDefinition Height="72*"/>
+                                <RowDefinition Height="14*"/>
+                                <RowDefinition Height="13*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="183*"/>
+                                <ColumnDefinition Width="29*"/>
+                                <ColumnDefinition Width="211*"/>
+                                <ColumnDefinition Width="211*"/>
+                                <ColumnDefinition Width="213*"/>
+                                <ColumnDefinition Width="64*"/>
+                                <ColumnDefinition Width="148*"/>
+                                <ColumnDefinition Width="213*"/>
+                            </Grid.ColumnDefinitions>
+                            <!--<Border Background="#2c7da0" BorderThickness="5" BorderBrush="#2c7da0" CornerRadius="10">-->
+                            <WrapPanel  Cursor="Hand"  Margin="11,-14,10,-17" VerticalAlignment="Center" HorizontalAlignment="Center" Width="192" Grid.Column="7" Height="98"  MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_15" Grid.RowSpan="5"  >
+                                <TextBlock  Text="پشتیبانی"   Margin="10,30,0,0" Style="{StaticResource blocktextgridtab}" />
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                                <Image Source="/image/data-backup.png" Height="40" Width="53" Margin="7,30,0,0" />
+                                <ProgressBar Name="ProgressBar1" Height="12" Width="189" Maximum="1000" Visibility="Hidden"/>
+                            </WrapPanel>
+
+                            <WrapPanel  Cursor="Hand"  Margin="9,-14,9,-17" VerticalAlignment="Center" HorizontalAlignment="Center" Width="194" Grid.Column="5" Height="98" Grid.ColumnSpan="2" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_16" Grid.RowSpan="5"   >
+
+                                <TextBlock  Text="بازگردانی"   Margin="10,30,0,0" Style="{StaticResource blocktextgridtab}" />
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                                <Image Source="/image/database-restore.png" Height="40" Width="53" Margin="7,30,0,0" />
+                            </WrapPanel>
+
+                            <Separator Grid.ColumnSpan="2" Grid.Column="4" Height="32" Margin="152,15,1,0" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.Row="2" Grid.RowSpan="3">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <Separator Grid.ColumnSpan="2" Grid.Column="6" Height="32" Margin="89,13,148,0" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.Row="2" Grid.RowSpan="2">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <ProgressBar Grid.Column="7" HorizontalAlignment="Left" Height="10" Margin="22,13,0,-16" VerticalAlignment="Top" Width="100" Visibility="Hidden" Grid.Row="4"/>
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="بیماران" Style="{StaticResource TabItemProperty}" FontFamily="IRANSansWeb UltraLight" Margin="-2,0,2,0" Width="252" Height="35" HorizontalAlignment="Right">
+                        <Grid x:Name="GrigPatiant" Background="#FFA1C8D8" Margin="-1,0,-5,0" Width="1260">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="18*"/>
+                                <RowDefinition Height="43*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="198*"/>
+                                <ColumnDefinition Width="198*"/>
+                                <ColumnDefinition Width="198*"/>
+                                <ColumnDefinition Width="198*"/>
+                                <ColumnDefinition Width="198*"/>
+                                <ColumnDefinition Width="185*"/>
+                            </Grid.ColumnDefinitions>
+                            <!--<Border Background="#2c7da0" BorderThickness="5" BorderBrush="#2c7da0" CornerRadius="10">-->
+                            <WrapPanel  Cursor="Hand" Grid.Row="0"  Margin="5,12,4,12" VerticalAlignment="Center" HorizontalAlignment="Center" Width="190" Grid.Column="6" Height="98" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_1" Grid.RowSpan="2"  >
+                                <TextBlock  Text="ثبت اطلاعات بیماران"   Margin="7,30,0,0" Style="{StaticResource blocktextgridtab}" />
+                                <Image Source="/image/Patiant.png" Height="40" Width="53" Margin="10,30,0,0" />
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                            </WrapPanel>
+
+                            <WrapPanel  Cursor="Hand" Grid.Row="0"  Margin="13,12,5,12" VerticalAlignment="Center" HorizontalAlignment="Center" Width="194" Grid.Column="5" Height="98" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_2" Grid.RowSpan="2"  >
+
+                                <TextBlock   Margin="10,30,0,0" Style="{StaticResource blocktextgridtab}" ><Run FlowDirection="RightToLeft" Text="ایجاد شماره پرونده"/></TextBlock>
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                                <Image Source="/image/icons8-add-file-80.png" Height="40" Width="53" Margin="-5,30,0,0" />
+                            </WrapPanel>
+                            <WrapPanel  Cursor="Hand" Grid.Row="0"  Margin="23,12,210,12" VerticalAlignment="Center" HorizontalAlignment="Center" Width="192" Grid.Column="4" Height="98" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_3" Grid.ColumnSpan="2" Grid.RowSpan="2"  >
+
+                                <TextBlock  Text="لیست بیماران"   Margin="10,30,0,0" Style="{StaticResource blocktextgridtab}"/>
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                                <Image Source="/image/member-skin-type.png" Height="40" Width="53" Margin="7,30,0,0" />
+                            </WrapPanel>
+                            <WrapPanel  Cursor="Hand" Grid.Row="0"  Margin="22,12,211,12" VerticalAlignment="Center" HorizontalAlignment="Center" Width="192" Grid.Column="3" Height="98" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_14" Grid.ColumnSpan="2" Grid.RowSpan="2"  >
+
+                                <TextBlock  Text="سوابق بیماران"   Margin="10,30,0,0" Style="{StaticResource blocktextgridtab}"/>
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                                <Image Source="/image/check.png" Height="40" Width="53" Margin="7,30,0,0" />
+                            </WrapPanel>
+                            <!--<WrapPanel  Cursor="Hand" Grid.Row="0"  Margin="24,10,0,10" VerticalAlignment="Center" HorizontalAlignment="Center" Width="192" Grid.Column="2" Height="98" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_14"  >
+
+                                <TextBlock  Text="پذیرش "   Margin="10,30,0,0" Style="{StaticResource blocktextgridtab}"/>
+                                
+                            <Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />
+                            
+                                <Image Source="/image/reception.png" Height="40" Width="53" Margin="7,30,0,0" />
+                            </WrapPanel>-->
+
+                            <WrapPanel  Cursor="Hand" Grid.Row="0"  Margin="209,14,3,10" VerticalAlignment="Center" HorizontalAlignment="Center" Width="212" Height="98" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_21" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2"  >
+
+                                <TextBlock  Text="جستجوی شماره پرونده"   Margin="15,30,0,0" Style="{StaticResource blocktextgridtab}" Width="141"/>
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                                <Image Source="/image/search-file.png" Height="40" Width="53" Margin="-5,30,0,0" />
+                            </WrapPanel>
+                            <Separator Grid.ColumnSpan="2" Grid.Column="4" Height="32" Margin="193,14,171,0" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.506,0.843" Grid.RowSpan="2">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform X="-13.15" Y="-8.887"/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <Separator Grid.ColumnSpan="2" Grid.Column="5" Height="32" Margin="173,0,174,0" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <Separator Grid.Column="2" Height="32" Margin="45,9,30,0" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.484,-2.641" Grid.ColumnSpan="2" Grid.Row="1">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform X="101.169" Y="100.504"/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <Separator Grid.ColumnSpan="2" Grid.Column="3" Height="32" Margin="181,17,175,0" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <Separator Height="32" Margin="164,3,177,0" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                        </Grid>
+                    </TabItem>
+                    <TabItem  FocusManager.IsFocusScope="True" Header="کاربران" Style="{StaticResource TabItemProperty}" FontFamily="IRANSansWeb UltraLight" HorizontalAlignment="Right" Height="35" Margin="-2,0,2,0" Width="248">
+                        <Grid x:Name="GriUser" Background="#FFA1C8D8" Margin="0,0,-6,-2" HorizontalAlignment="Right" Width="1260">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="16*"/>
+                                <RowDefinition Height="5*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="181*"/>
+                                <ColumnDefinition Width="251*"/>
+                                <ColumnDefinition Width="219*"/>
+                                <ColumnDefinition Width="182*"/>
+                                <ColumnDefinition Width="36*"/>
+                                <ColumnDefinition Width="70*"/>
+                                <ColumnDefinition Width="160*"/>
+                                <ColumnDefinition Width="161*"/>
+                                <ColumnDefinition Width="45*"/>
+                            </Grid.ColumnDefinitions>
+                            <!--<Border Background="#2c7da0" BorderThickness="5" BorderBrush="#2c7da0" CornerRadius="10">-->
+                            <WrapPanel  Cursor="Hand" Grid.Row="0"  Margin="3,-17,4,-18" VerticalAlignment="Center" HorizontalAlignment="Center" Width="192" Grid.Column="7" Height="98" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_4" Grid.ColumnSpan="2" Grid.RowSpan="2"  >
+                                <TextBlock  Text="اطلاعات کاربران"   Margin="10,30,0,0" Style="{StaticResource blocktextgridtab}"/>
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                                <Image Source="/image/addu.png" Height="40" Width="53" Margin="7,30,0,0" />
+                            </WrapPanel>
+
+                            <WrapPanel  Cursor="Hand" Grid.Row="0"  Margin="14,-17,14,-18" VerticalAlignment="Center" HorizontalAlignment="Center" Width="194" Grid.Column="5" Height="98" Grid.ColumnSpan="2"  MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_5" Grid.RowSpan="2" >
+
+                                <TextBlock  Text="اطلاعات پزشکان"   Margin="10,30,0,0" Style="{StaticResource blocktextgridtab}" />
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                                <Image Source="/image/doctor.png" Height="40" Width="53" Margin="7,30,0,0" />
+                            </WrapPanel>
+                            <WrapPanel  Cursor="Hand" Grid.Row="0"  Margin="10,-17,9,-18" VerticalAlignment="Center" HorizontalAlignment="Center" Width="192" Grid.Column="3" Height="98" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_6" Grid.ColumnSpan="2" Grid.RowSpan="2"  >
+
+                                <TextBlock  Text="گروه کاربری"   Margin="10,30,0,0" Style="{StaticResource blocktextgridtab}" />
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                                <Image Source="/image/user-group.png" Height="40" Width="53" Margin="7,30,0,0" />
+                            </WrapPanel>
+                            <WrapPanel  Cursor="Hand" Grid.Row="0"  Margin="10,-17,10,-18" VerticalAlignment="Center" HorizontalAlignment="Center" Width="192" Grid.Column="2" Height="98" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_7" Grid.RowSpan="2"  >
+                                <TextBlock  Text="تغییر رمز عبور"   Margin="30,30,0,0" Style="{StaticResource blocktextgridtab}" />
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                                <Image Source="/image/change-password.png" Height="40" Width="53" Margin="15,30,0,0" />
+                            </WrapPanel>
+                            <WrapPanel  Cursor="Hand" Grid.Row="0"  Margin="2,-17,10,-18" VerticalAlignment="Center" HorizontalAlignment="Center" Width="230" Height="98" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_25" Grid.Column="1" Grid.RowSpan="2"  >
+                                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+                                <TextBlock  Text="تنظیم تاریخ حضور پزشک"   Margin="10,30,0,0" Style="{StaticResource blocktextgridtab}" Width="149"/>
+                                <Image Source="/image/calendar.png" Height="40" Width="53" Margin="10,30,0,0" />
+                            </WrapPanel>
+                            <Separator Grid.ColumnSpan="3" Grid.Column="3" Height="32" Margin="153,42,0,-11" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <Separator Grid.ColumnSpan="2" Grid.Column="6" Height="32" Margin="89,40,103,-9" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <Separator Grid.ColumnSpan="2" Grid.Column="2" Height="32" Margin="149,45,116,-14" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <Separator Grid.ColumnSpan="2" Grid.Column="1" Height="32" Margin="157,45,143,-14" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                            <Separator Grid.ColumnSpan="2" Height="32" Margin="120,40,180,-9" VerticalAlignment="Top" Background="#FF292727" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+                                <Separator.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="90.37"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Separator.RenderTransform>
+                            </Separator>
+                        </Grid>
+
+                    </TabItem>
+
+                </TabControl>
+            </Border>
+
+            <Border Grid.Row="3" Grid.Column="9" BorderBrush="#f2f2f2" Grid.ColumnSpan="3" Grid.RowSpan="9"  BorderThickness="4" CornerRadius="10" Margin="65,18,14,3">
+                <Rectangle Fill="#2c7da0" Margin="6,6,6,0" />
+            </Border>
+            <WrapPanel Cursor="Hand" Grid.Row="4" Grid.ColumnSpan="3" Margin="85,7,31,11" VerticalAlignment="Center" HorizontalAlignment="Center" Width="206" Grid.Column="9" Height="40"  MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_20">
+                <TextBlock  Text="ثبت اطلاعات بیماران"   Margin="10,15,0,0" Style="{StaticResource blocktextbold}" />
+                <Image Source="/image/Patiant.png" Height="40" Width="53" Margin="7,0,0,0" />
+                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="7,0,0,0" />-->
+            </WrapPanel>
+
+            <WrapPanel Cursor="Hand" Grid.Row="5" Grid.ColumnSpan="3" Margin="87,7,39.5,11" VerticalAlignment="Center" HorizontalAlignment="Center" Width="196" Grid.Column="9" Height="40" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_26"  >
+                <TextBlock  Text="پذیرش"    Margin="80,0,0,0" Style="{StaticResource blocktextbold}" />
+                <Image Source="/image/reception.png" Height="40" Width="59"  Margin="10,0,0,0" />
+            </WrapPanel>
+
+            <WrapPanel Cursor="Hand" Grid.Row="6" Grid.ColumnSpan="3" Margin="83,0,21.5,9" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="218" Grid.Column="9" Height="40" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_13" >
+                <TextBlock  Text="نوبت دهی"    Style="{StaticResource blocktextbold}" Margin="70,0,0,0" />
+                <Image Source="/image/queue2.png" Height="40" Width="53" Margin="10,0,0,0" />
+                <!--<Image Source="/image/add-file_whit.png" Height="40" Width="53" Margin="25,0,0,0" />-->
+            </WrapPanel>
+
+
+
+            <WrapPanel Cursor="Hand" Grid.Row="7" Grid.ColumnSpan="3" Margin="83,9,15.5,9" VerticalAlignment="Center" HorizontalAlignment="Center" Width="224" Grid.Column="9" Height="40" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_23" >
+                <TextBlock  Text="ایجاد شماره پرونده"   Margin="27,0,0,0" Style="{StaticResource blocktextbold}" />
+                <Image Source="/image/icons8-add-file-80.png" Height="40" Width="47" Margin="13,0,0,0" />
+            </WrapPanel>
+
+            <WrapPanel Cursor="Hand" Grid.Row="8" Grid.ColumnSpan="3" Margin="82,10,0.5,7" VerticalAlignment="Center" HorizontalAlignment="Center" Width="240" Grid.Column="9" Height="40" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_19" >
+                <TextBlock  Text="لیست بیماران"   Margin="60,0,0,0" Style="{StaticResource blocktextbold}"/>
+                <Image Source="/image/member-skin-type.png" Height="40" Width="49"  Margin="17,0,0,0"/>
+            </WrapPanel>
+            <WrapPanel Cursor="Hand" Grid.Row="10" Grid.ColumnSpan="3" Margin="85,48,41,22" VerticalAlignment="Center" HorizontalAlignment="Center" Width="196" MouseLeftButtonDown="WrapPanel_MouseLeftButtonDown_22" Height="46" Grid.Column="9" Grid.RowSpan="2">
+                <TextBlock  Text="  خروج از حساب کاربری"   Margin="3,8,0,0" Style="{StaticResource blocktextbold}"/>
+                <Image Source="/image/logout-10000.png" Height="36" Width="40"  Margin="8,3,0,0" />
+
+            </WrapPanel>
+
+            <!--<WrapPanel Cursor="Hand" Grid.Row="9" Grid.ColumnSpan="2" Margin="10,49,10,10" VerticalAlignment="Center" HorizontalAlignment="Center" Width="196" Grid.RowSpan="2" Height="53" >
+
+                <Image Source="/image/account_white.png" Height="43" Width="48"  />
+                <TextBlock x:Name="usernametxt" Text=" : نام کاربر " Margin="10,15,10,10"   Style="{StaticResource blocktextbold}"/>
+            </WrapPanel>-->
+            <Border BorderBrush="#f2f2f2" Grid.ColumnSpan="12"  BorderThickness="5" CornerRadius="10" Margin="16,10,10.5,49" Grid.RowSpan="2">
+                <Rectangle Fill="#2c7da0" Margin="0,5,5,0"/>
+            </Border>
+            <Image Source="/image/power-off-red.png" Height="39" Width="53" Cursor="Hand" MouseLeftButtonDown="Image_MouseLeftButtonDown" Margin="28,18,27,1" />
+            <WrapPanel Cursor="Hand" Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="3" Margin="99,14,27.5,49" VerticalAlignment="Center" HorizontalAlignment="Center" Width="196" Grid.RowSpan="2" Height="53" >
+
+
+                <TextBlock x:Name="usernametxt" Text=" : نام کاربر " Margin="20,15,10,10"   Style="{StaticResource blocktextaccount}" Width="117"/>
+                <Image Source="/image/account1.png" Height="42" Width="48"  />
+            </WrapPanel>
+            <!--<hc:PersianCalendar Grid.Column="6" Grid.Row="4" Grid.ColumnSpan="3" Grid.RowSpan="6"  Margin="5,5,10,5"/>-->
+
+            <!--<Border Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="3" Grid.RowSpan="6" BorderBrush="#f2f2f2f2" BorderThickness="5" CornerRadius="15"  Margin="5">
+                <Rectangle Fill="#f2f2f2"/>
+            </Border>-->
+
+
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,5 @@
+G:\peractis of modhej\Medical Office\BE\bin\Debug\BE.dll
+G:\peractis of modhej\Medical Office\BE\bin\Debug\BE.pdb
+G:\peractis of modhej\Medical Office\BE\obj\Debug\BE.dll
+G:\peractis of modhej\Medical Office\BE\obj\Debug\BE.pdb
+G:\peractis of modhej\Medical Office\BE\obj\Debug\BE.csprojResolveAssemblyReference.cache

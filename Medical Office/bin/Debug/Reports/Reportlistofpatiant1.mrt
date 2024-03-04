@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="1">
+      <ListOfPatiant Ref="2" type="Stimulsoft.Report.Dictionary.StiBusinessObject" isKey="true">
+        <Alias>ListOfPatiant</Alias>
+        <BusinessObjects isList="true" count="0" />
+        <Category />
+        <Columns isList="true" count="4">
+          <value>Name,System.String</value>
+          <value>FullName,System.String</value>
+          <value>Hozor,System.String</value>
+          <value>VisitDate,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Guid>7b4eb32245e548549082d4b7301bd0e5</Guid>
+        <Key>f8ac5d3020de49edac0d0bc378950bec</Key>
+        <Name>ListOfPatiant</Name>
+      </ListOfPatiant>
+    </BusinessObjects>
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="0" />
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="2">
+      <value>,date1,date1,,System.String,,False,False,False,False,,eee1c9300cda410a806fa615f75f9f92</value>
+      <value>,date2,date2,,System.String,,False,False,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>f69808b6d81948f1b1f65177e6410d09</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="3">
+        <Text2 Ref="4" type="Text" isKey="true">
+          <Brush>White</Brush>
+          <ClientRectangle>7.4,25.8,3,0.8</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>IRANSansWeb,9</Font>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text2</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Text>{PageNofM}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>SystemVariables</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text2>
+        <Panel1 Ref="5" type="Panel" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.2,19,4</ClientRectangle>
+          <Components isList="true" count="8">
+            <Text1 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7.6,0.4,4.6,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb,14</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="5" />
+              <Text>لیست بیماران کلینیک</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text3 Ref="7" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>17,2.2,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="3" />
+              <Parent isRef="5" />
+              <Text>از تاریخ</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+            <Text4 Ref="8" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>12.4,2.2,4.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="3" />
+              <Parent isRef="5" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text4>
+            <Text5 Ref="9" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>6,2.2,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="3" />
+              <Parent isRef="5" />
+              <Text>تا تاریخ</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text5>
+            <Text6 Ref="10" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>0.6,2.2,4.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="3" />
+              <Parent isRef="5" />
+              <Text>
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text6>
+            <Text7 Ref="11" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>12.4,2.2,4.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb,9</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="3" />
+              <Parent isRef="5" />
+              <Text>{date1}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text7>
+            <Text8 Ref="12" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>0.6,2.2,4.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Font>IRANSansWeb,9</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="3" />
+              <Parent isRef="5" />
+              <Text>{date2}</Text>
+              <TextBrush>Black</TextBrush>
+            </Text8>
+            <Panel2 Ref="13" type="Panel" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.8,19,19.8</ClientRectangle>
+              <Components isList="true" count="2">
+                <Data Ref="14" type="DataBand" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <BusinessObjectGuid>7b4eb32245e548549082d4b7301bd0e5</BusinessObjectGuid>
+                  <ClientRectangle>0,0.4,19,0.8</ClientRectangle>
+                  <Components isList="true" count="0" />
+                  <Conditions isList="true" count="0" />
+                  <DataSourceName isNull="true" />
+                  <Expressions isList="true" count="0" />
+                  <Filters isList="true" count="0" />
+                  <Name>Data</Name>
+                  <Page isRef="3" />
+                  <Sort isList="true" count="0" />
+                </Data>
+                <TableListOfPatiant Ref="15" type="Stimulsoft.Report.Components.Table.StiTable" isKey="true">
+                  <Brush>Transparent</Brush>
+                  <BusinessObjectGuid>7b4eb32245e548549082d4b7301bd0e5</BusinessObjectGuid>
+                  <ClientRectangle>0,2,19,1.7</ClientRectangle>
+                  <ColumnCount>4</ColumnCount>
+                  <Components isList="true" count="12">
+                    <TableListOfPatiant_Cell1 Ref="16" type="TableCell" isKey="true">
+                      <Brush>White</Brush>
+                      <ClientRectangle>0,0,4.8,0.8</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Expressions isList="true" count="0" />
+                      <Font>IRANSansWeb,9</Font>
+                      <HorAlignment>Center</HorAlignment>
+                      <ID>0</ID>
+                      <JoinCells isList="true" count="0" />
+                      <Margins>0,0,0,0</Margins>
+                      <Name>TableListOfPatiant_Cell1</Name>
+                      <Page isRef="3" />
+                      <Parent isRef="15" />
+                      <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                      <Text>ساعت حضور</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                      <VertAlignment>Center</VertAlignment>
+                    </TableListOfPatiant_Cell1>
+                    <TableListOfPatiant_Cell2 Ref="17" type="TableCell" isKey="true">
+                      <Brush>White</Brush>
+                      <ClientRectangle>4.8,0,4.8,0.8</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Expressions isList="true" count="0" />
+                      <Font>IRANSansWeb,9</Font>
+                      <HorAlignment>Center</HorAlignment>
+                      <ID>1</ID>
+                      <JoinCells isList="true" count="0" />
+                      <Margins>0,0,0,0</Margins>
+                      <Name>TableListOfPatiant_Cell2</Name>
+                      <Page isRef="3" />
+                      <Parent isRef="15" />
+                      <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                      <Text>تاریخ ویزیت</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                      <VertAlignment>Center</VertAlignment>
+                    </TableListOfPatiant_Cell2>
+                    <TableListOfPatiant_Cell3 Ref="18" type="TableCell" isKey="true">
+                      <Brush>White</Brush>
+                      <ClientRectangle>9.6,0,4.8,0.8</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Expressions isList="true" count="0" />
+                      <Font>IRANSansWeb,9</Font>
+                      <HorAlignment>Center</HorAlignment>
+                      <ID>2</ID>
+                      <JoinCells isList="true" count="0" />
+                      <Margins>0,0,0,0</Margins>
+                      <Name>TableListOfPatiant_Cell3</Name>
+                      <Page isRef="3" />
+                      <Parent isRef="15" />
+                      <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                      <Text>نام پزشک</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                      <VertAlignment>Center</VertAlignment>
+                    </TableListOfPatiant_Cell3>
+                    <TableListOfPatiant_Cell4 Ref="19" type="TableCell" isKey="true">
+                      <Brush>White</Brush>
+                      <ClientRectangle>14.4,0,4.6,0.8</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Expressions isList="true" count="0" />
+                      <Font>IRANSansWeb,9</Font>
+                      <HorAlignment>Center</HorAlignment>
+                      <ID>3</ID>
+                      <JoinCells isList="true" count="0" />
+                      <Margins>0,0,0,0</Margins>
+                      <Name>TableListOfPatiant_Cell4</Name>
+                      <Page isRef="3" />
+                      <Parent isRef="15" />
+                      <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                      <Text>نام بیمار</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                      <VertAlignment>Center</VertAlignment>
+                    </TableListOfPatiant_Cell4>
+                    <TableListOfPatiant_Cell5 Ref="20" type="TableCell" isKey="true">
+                      <Brush>White</Brush>
+                      <ClientRectangle>0,0.8,4.8,0.8</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Expressions isList="true" count="0" />
+                      <Font>IRANSansWeb,9</Font>
+                      <HorAlignment>Center</HorAlignment>
+                      <ID>4</ID>
+                      <JoinCells isList="true" count="0" />
+                      <Margins>0,0,0,0</Margins>
+                      <Name>TableListOfPatiant_Cell5</Name>
+                      <Page isRef="3" />
+                      <Parent isRef="15" />
+                      <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                      <Text>{ListOfPatiant.Hozor}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <VertAlignment>Center</VertAlignment>
+                    </TableListOfPatiant_Cell5>
+                    <TableListOfPatiant_Cell6 Ref="21" type="TableCell" isKey="true">
+                      <Brush>White</Brush>
+                      <ClientRectangle>4.8,0.8,4.8,0.8</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Expressions isList="true" count="0" />
+                      <Font>IRANSansWeb,9</Font>
+                      <HorAlignment>Center</HorAlignment>
+                      <ID>5</ID>
+                      <JoinCells isList="true" count="0" />
+                      <Margins>0,0,0,0</Margins>
+                      <Name>TableListOfPatiant_Cell6</Name>
+                      <Page isRef="3" />
+                      <Parent isRef="15" />
+                      <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                      <Text>{ListOfPatiant.VisitDate}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <VertAlignment>Center</VertAlignment>
+                    </TableListOfPatiant_Cell6>
+                    <TableListOfPatiant_Cell7 Ref="22" type="TableCell" isKey="true">
+                      <Brush>White</Brush>
+                      <ClientRectangle>9.6,0.8,4.8,0.8</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Expressions isList="true" count="0" />
+                      <Font>IRANSansWeb,9</Font>
+                      <HorAlignment>Center</HorAlignment>
+                      <ID>6</ID>
+                      <JoinCells isList="true" count="0" />
+                      <Margins>0,0,0,0</Margins>
+                      <Name>TableListOfPatiant_Cell7</Name>
+                      <Page isRef="3" />
+                      <Parent isRef="15" />
+                      <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                      <Text>{ListOfPatiant.Name}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <VertAlignment>Center</VertAlignment>
+                    </TableListOfPatiant_Cell7>
+                    <TableListOfPatiant_Cell8 Ref="23" type="TableCell" isKey="true">
+                      <Brush>White</Brush>
+                      <ClientRectangle>14.4,0.8,4.6,0.8</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Expressions isList="true" count="0" />
+                      <Font>IRANSansWeb,9</Font>
+                      <HorAlignment>Center</HorAlignment>
+                      <ID>7</ID>
+                      <JoinCells isList="true" count="0" />
+                      <Margins>0,0,0,0</Margins>
+                      <Name>TableListOfPatiant_Cell8</Name>
+                      <Page isRef="3" />
+                      <Parent isRef="15" />
+                      <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                      <Text>{ListOfPatiant.FullName}</Text>
+                      <TextBrush>Black</TextBrush>
+                      <VertAlignment>Center</VertAlignment>
+                    </TableListOfPatiant_Cell8>
+                    <TableListOfPatiant_Cell9 Ref="24" type="TableCell" isKey="true">
+                      <Brush>White</Brush>
+                      <ClientRectangle>0,1.6,4.8,0.1</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Expressions isList="true" count="0" />
+                      <Font>Arial,9</Font>
+                      <ID>8</ID>
+                      <JoinCells isList="true" count="0" />
+                      <Margins>0,0,0,0</Margins>
+                      <Name>TableListOfPatiant_Cell9</Name>
+                      <Page isRef="3" />
+                      <Parent isRef="15" />
+                      <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                      <TextBrush>Black</TextBrush>
+                    </TableListOfPatiant_Cell9>
+                    <TableListOfPatiant_Cell10 Ref="25" type="TableCell" isKey="true">
+                      <Brush>White</Brush>
+                      <ClientRectangle>4.8,1.6,4.8,0.1</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Expressions isList="true" count="0" />
+                      <Font>Arial,9</Font>
+                      <ID>9</ID>
+                      <JoinCells isList="true" count="0" />
+                      <Margins>0,0,0,0</Margins>
+                      <Name>TableListOfPatiant_Cell10</Name>
+                      <Page isRef="3" />
+                      <Parent isRef="15" />
+                      <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                      <TextBrush>Black</TextBrush>
+                    </TableListOfPatiant_Cell10>
+                    <TableListOfPatiant_Cell11 Ref="26" type="TableCell" isKey="true">
+                      <Brush>White</Brush>
+                      <ClientRectangle>9.6,1.6,4.8,0.1</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Expressions isList="true" count="0" />
+                      <Font>IRANSansWeb,9</Font>
+                      <HorAlignment>Center</HorAlignment>
+                      <ID>10</ID>
+                      <JoinCells isList="true" count="0" />
+                      <Margins>0,0,0,0</Margins>
+                      <Name>TableListOfPatiant_Cell11</Name>
+                      <Page isRef="3" />
+                      <Parent isRef="15" />
+                      <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                      <TextBrush>Black</TextBrush>
+                      <VertAlignment>Center</VertAlignment>
+                    </TableListOfPatiant_Cell11>
+                    <TableListOfPatiant_Cell12 Ref="27" type="TableCell" isKey="true">
+                      <Brush>White</Brush>
+                      <ClientRectangle>14.4,1.6,4.6,0.1</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Expressions isList="true" count="0" />
+                      <Font>Arial,9</Font>
+                      <ID>11</ID>
+                      <JoinCells isList="true" count="0" />
+                      <Margins>0,0,0,0</Margins>
+                      <Name>TableListOfPatiant_Cell12</Name>
+                      <Page isRef="3" />
+                      <Parent isRef="15" />
+                      <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+                      <TextBrush>Black</TextBrush>
+                    </TableListOfPatiant_Cell12>
+                  </Components>
+                  <Conditions isList="true" count="0" />
+                  <DataSourceName isNull="true" />
+                  <Expressions isList="true" count="0" />
+                  <Filters isList="true" count="0" />
+                  <FooterRowsCount>1</FooterRowsCount>
+                  <HeaderRowsCount>1</HeaderRowsCount>
+                  <MinHeight>0.60000000000000009</MinHeight>
+                  <Name>TableListOfPatiant</Name>
+                  <NumberID>12</NumberID>
+                  <Page isRef="3" />
+                  <Parent isRef="13" />
+                  <RowCount>3</RowCount>
+                  <Sort isList="true" count="0" />
+                </TableListOfPatiant>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Expressions isList="true" count="0" />
+              <Name>Panel2</Name>
+              <Page isRef="3" />
+              <Parent isRef="5" />
+            </Panel2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>Panel1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </Panel1>
+        <HorizontalLinePrimitive1 Ref="28" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>-0.2,3.6,19.4,0.0254</ClientRectangle>
+          <Color>Black</Color>
+          <Conditions isList="true" count="0" />
+          <EndCap Ref="29" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Expressions isList="true" count="0" />
+          <Name>HorizontalLinePrimitive1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <StartCap Ref="30" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>4e431f8c96b1429c9220a5f3987ab55a</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>2/25/2023 8:06:12 PM</ReportChanged>
+  <ReportCreated>2/25/2023 7:36:50 PM</ReportCreated>
+  <ReportFile>G:\peractis of modhej\Medical Office\Reports\Reportlistofpatiant1.mrt</ReportFile>
+  <ReportGuid>8df26a646c494b669e8e30e808390c24</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2023.1.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

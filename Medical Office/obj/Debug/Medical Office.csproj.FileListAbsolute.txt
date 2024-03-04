@@ -1,0 +1,94 @@
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical Office.csprojResolveAssemblyReference.cache
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\MainWindow.g.cs
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\App.g.cs
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical Office_Content.g.cs
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical Office_MarkupCompile.cache
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical Office_MarkupCompile.lref
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Medical Office.exe.config
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Medical Office.exe
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Medical Office.pdb
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\BE.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\BLL.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\DAL.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\DateTimeSelector.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\DevComponents.DotNetBar2.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\EntityFramework.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\EntityFramework.SqlServer.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\ExcelLibrary.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\FarsiLibrary.Win.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\FoxLearn.License.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\LibExcel.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Microsoft.Web.WebView2.Core.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Newtonsoft.Json.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\NuGet.Common.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\NuGet.Configuration.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\NuGet.Frameworks.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\NuGet.Packaging.Core.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\NuGet.Packaging.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\NuGet.Protocol.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\NuGet.Resolver.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\NuGet.Versioning.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\PagedList.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\PersianDateTime.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Stimulsoft.Base.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Stimulsoft.Report.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Stimulsoft.Report.Win.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\XanderUI.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Stimulsoft.Data.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Stimulsoft.Controls.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Stimulsoft.Controls.Win.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\BE.pdb
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\BLL.pdb
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\DAL.pdb
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\DevComponents.DotNetBar2.xml
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\EntityFramework.xml
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\EntityFramework.SqlServer.xml
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\PagedList.xml
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\PersianDateTime.xml
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\App.baml
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\MainWindow.baml
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical Office.g.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.AccessRoleForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.BackRes.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.ChandePassword.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.DoctorForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.FileForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.frmNotification.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.GhooboozForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.InsuranceForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.LoginForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.Medical_Bio.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.MessageForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.PatiantForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.ProductForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.Properties.Resources.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.RegisterAdmin.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.Report.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.ReportDate.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.SavabeghForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.SearchParvande.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.ServiecesForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.SetTime.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.ShomareParvandeForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.TariffeForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.UCLogin.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.UserForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical Office.csproj.GenerateResource.Cache
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical Office.exe
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical Office.pdb
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.LogIn2.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.RigAdmin.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.SplashForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.ListForms.resources
+G:\peractis of modhej\Medical Office\Medical Office\obj\Debug\Medical_Office.NobatForm.resources
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\DevComponents.DotNetBar.Charts.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Microsoft.Identity.Client.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Microsoft.IdentityModel.Logging.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Microsoft.SqlServer.Management.SqlParser.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Microsoft.SqlServer.Smo.dll
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Microsoft.Identity.Client.xml
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Microsoft.IdentityModel.Logging.xml
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Microsoft.SqlServer.Management.SqlParser.pdb
+G:\peractis of modhej\Medical Office\Medical Office\bin\Debug\Microsoft.SqlServer.Management.SqlParser.xml
